@@ -48,7 +48,7 @@ Execução em Docker, dentro da AWS Cloud.
 ## Entrega
 
 - **O trabalho deve ser feito em grupos de três ou quatro pessoas**;
-- Criar um repositório no Github;
+- Criar uma branch no repositório com o formato grupo-número (Exemplo: grupo-1);
 - Conferir se a API desejada já não foi escolhida por outra equipe;
 - Subir o trabalho no repositório da equipe com um README.md:
   - documentar detalhes sobre como a avaliação foi desenvolvida;
