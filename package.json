@@ -1,0 +1,30 @@
+{
+  "name": "sprints-2-3-pb-aws-maio",
+  "version": "1.0.0",
+  "description": "Solução para a atividade das sprints 2 e 3 do estagio compass aws",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Compass-pb-aws-2024-MAIO-A/sprints-2-3-pb-aws-maio.git"
+  },
+  "keywords": [
+    "docker",
+    "aws",
+    "nodejs"
+  ],
+  "author": "equipe 8",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Compass-pb-aws-2024-MAIO-A/sprints-2-3-pb-aws-maio/issues"
+  },
+  "homepage": "https://github.com/Compass-pb-aws-2024-MAIO-A/sprints-2-3-pb-aws-maio#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.2",
+    "sequelize": "^6.37.3"
+  }
+}
