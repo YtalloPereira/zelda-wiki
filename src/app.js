@@ -9,7 +9,7 @@ app.listen(port, () => {
     console.log(`Express rodando na porta ${port}`);
 })
 
-app.use('/games', gameRoutes);
+app.use('/', gameRoutes);
 
 
 
