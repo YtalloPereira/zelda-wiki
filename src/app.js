@@ -3,18 +3,21 @@ const app = express()
 const port = 3000
 const path = require('path')
 const {api} = require('./routes/api')
-const {gameRotes} = require('./routes/gameRoutes/gameRoutes');
+const gameRoutes = require('./routes/gameRoutes/gameRoutes');
 
 app.listen(port, () => {
     console.log(`Express rodando na porta ${port}`);
 })
 
+app.use('/games', gameRoutes);
+
+
+
+/*
 app.get('/', (_req, res) => {
     res.sendFile(path.join(__dirname,'views', 'index.html'));
 })
-
-app.use('/games', require('./routes/gameRoutes/gameRoutes'));
-
+*/
 /*
 const getItemByName = async (itemName) => {
     const response = await api.get(`/items/?name=${itemName}`)
