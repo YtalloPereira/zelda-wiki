@@ -4,7 +4,7 @@
   "description": "Solução para a atividade das sprints 2 e 3 do estagio compass aws",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/app.js"
   },
   "repository": {
     "type": "git",
@@ -28,5 +28,8 @@
     "express-handlebars": "^7.1.2",
     "node-fetch": "^3.3.2",
     "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.3"
   }
 }

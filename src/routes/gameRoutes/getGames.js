@@ -1,6 +1,6 @@
 const { api } = require('../api')
 
-const getAllGames = async (page) => {
+const getGames = async (page) => {
   const response = await api.get(`/games?limit=32&page=${page}`)
   .then(response => {
       console.log(response.data)
@@ -11,4 +11,4 @@ const getAllGames = async (page) => {
   })
 }
 
-module.exports = { getAllGames }
+module.exports = { getGames }
