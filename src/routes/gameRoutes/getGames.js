@@ -4,11 +4,8 @@ const getGames = async () => {
   const response = await api.get(`/games?limit=32`)
   .then(response => {
     const games=response.data.data;
-    // games.forEach(game => {
-    //   console.log(game);
-    // });
-    // return response.data
-    console.log(games[31].name);
+    console.log(games);
+    return games;
   })
   .catch(error => {
       console.error(error)
