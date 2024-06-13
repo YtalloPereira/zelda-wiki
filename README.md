@@ -1,11 +1,12 @@
 <h1 align="center"> Zelda: a Link to the Compass </h1>
 <p align="center">
-<img  width="500" height="140" src="/src/views/assets/Zelda_Logo.png">
+<img src="/src/views/assets/Zelda_Logo.png">
 </p>
 
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 ![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white)
+![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD)
 
 Projeto desenvolvido para a avaliação dos aprendizados da Sprint 2 e 3 do Estágio na empresa Compass UOL, "Zelda: a Link to the Compass" consiste em uma Wiki voltada para os fãs da série de jogos da Nintendo.
 
