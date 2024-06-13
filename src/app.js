@@ -1,8 +1,9 @@
-const express = require('express')
-const app = express()
-const port = 3000
-const path = require('path')
-const {api} = require('./routes/api')
+const express = require('express');
+const exphbs     = require('express-handlebars');
+const path = require('path');
+const app = express();
+const port = 3000;
+const {api} = require('./routes/api');
 const gameRoutes = require('./routes/gameRoutes/gameRoutes');
 
 app.listen(port, () => {
@@ -11,7 +12,10 @@ app.listen(port, () => {
 
 app.use('/', gameRoutes);
 
-
+//handle bars 
+app.set('views',path.join(__dirname,'views'));
+app.engine('handlebars', exphbs.engine({defaultLayout: 'main'}));
+app.set('view engine','handlebars');
 
 /*
 app.get('/', (_req, res) => {
