@@ -1,6 +1,6 @@
 <h1 align="center"> Zelda: a Link to the Compass </h1>
 <p align="center">
-<img  width="500" height="140" src="/src/views/assets/A_Link_to_the_past.png">
+<img  width="500" height="140" src="/src/views/assets/Zelda_Logo.png">
 </p>
 
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
