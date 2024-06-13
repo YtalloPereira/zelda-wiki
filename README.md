@@ -1,63 +1,40 @@
-# Avaliação das Sprints 2 e 3 - Programa de Bolsas Compass UOL / AWS - MAIO/2024
+<h1 align="center"> Zelda: a Link to the Compass </h1>
+<p align="center">
+<img  width="500" height="140" src="/src/views/assets/A_Link_to_the_past.png">
+</p>
 
-Avaliação das segunda e terceira sprints do programa de bolsas Compass UOL para formação em machine learning para AWS.
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white)
 
-***
+Projeto desenvolvido para a avaliação dos aprendizados da Sprint 2 e 3 do Estágio na empresa Compass UOL, "Zelda: a Link to the Compass" consiste em uma Wiki voltada para os fãs da série de jogos da Nintendo.
 
-## Execução (Código Fonte)
+Dentro da mesma, o usuário encontrará uma rica fonte de informações sobre cada um dos jogos lançados ao longo do tempo, tendo acesso a informações como nome, capa, descrição, data de lançamento entre outros.
 
-Faça um sistema em JavaScript/NodeJS que produza uma interface para consulta de API pública. Este sistema deverá estar em container com **Docker**, em cloud AWS. 
+<h4 align = "Center">
+ :construction: Projeto em construção :construction: 
+</h4>
 
-**Especificações**:
+# :hammer: Funcionalidades do projeto
 
-1. Escolher uma API pública (em <https://any-api.com/> , ou qualquer outra, e **deve ser diferente das demais equipes**);
-2. Consumir esta API utilizando NodeJS;
-3. Subir esta API utilizando Docker;
-4. Criar uma página html para fazer consultas à API construída em NodeJS (pode ser bem simples, o layout não será avaliado).
+- `Listagem de todos os jogos`: Na Página inicial do projeto será disponibilizadá a lista de jogos de toda franquia, que poderão ser visualizados através de suas capas.
+- `Visualizar um jogo específico`: ao selecionar um jogo específico, o usuário terá acesso as informações detalhadas do mesmo.
+- `Procurar um jogo`: através de um campo de pesquisa e Utilizando uma palavra chave, o usuário poderá procurar por um jogo específico.
 
-### Docker
+# 📁 Acesso ao projeto
+//editar e colocar o link do projeto quando o deploy acontecer
+# 🛠️ Abrir e rodar o projeto
+### :alert: você precisa fazer parte da organização Compass-pb-aws-2024-MAIO-A :alert:
+Siga o passo-a-passo:
+1. abra o GitBash e utilize o comando "git clone  https://github.com/Compass-pb-aws-2024-MAIO-A/sprints-2-3-pb-aws-maio" para clonar o projeto.
+2. utilize o comando "git switch branch-8" e terá acesso a branch que contém o código fonte do projeto.
+3. dentro da pasta do projeto, utilize o comando "npm install" e assim o gerenciador de pacotes baixará todas as dependências necessárias para o funcionamento do projeto.
+4. ainda no terminal, digite "npm run dev" para que o projeto seja inicializado
+5. acesse o link <a>localhost:3000/</a> e divirta-se!
 
-Execução em Docker, dentro da AWS Cloud.
-
-* Subir o projeto NodeJS em Docker na cloud AWS.
-* O grupo pode ficar livre quanto à estratégia adotada para executar o Docker na AWS.
-* Exemplos de como executar:
-  * [Deploy Node js Application on AWS EC2 Server](https://youtu.be/VHzeoDK6L0c?feature=shared)
-  * [Docker na AWS: EC2 ou Elastic Beanstalk? O que é melhor?](https://youtu.be/TJSK9MRPZs4?si=FCm_lDQWIVEUAHlj)
-
-***
-
-## O que será avaliado?
-
-- Uso do projeto em NodeJS;
-- Solução em Docker;
-- Projeto em produção na cloud AWS;
-- Seguir as atividades na ordem proposta;
-- Subir códigos no git ao longo do desenvolvimento;
-- Organização geral do código fonte:
-  - Estrutura de pastas;
-  - Estrutura da lógica de negócio;
-  - Divisão de responsabilidades em arquivos/pastas distintos;
-  - Otimização do código fonte (evitar duplicações de código);
-- Objetividade do README.md;
-- Modelo de organização da equipe para o desenvolvimento do projeto;
-- Página criada com acesso online.
-
-***
-
-## Entrega
-
-- **O trabalho deve ser feito em grupos de três ou quatro pessoas**;
-- Criar uma branch no repositório com o formato grupo-número (Exemplo: grupo-1);
-- Conferir se a API desejada já não foi escolhida por outra equipe;
-- Subir o trabalho no repositório da equipe com um README.md:
-  - documentar detalhes sobre como a avaliação foi desenvolvida;
-  - relatar dificuldades conhecidas;
-  - descrever como utilizar o sistema;
-  - fornecer a URL para acesso à página;
-- 🔨 Disponibilizar o código fonte desenvolvido (Sugestão: pasta `src`);
-- Colocar o arquivo com a configuração nginx (se utilizado).
-
-- O prazo de entrega é até às 09h do dia 17/06/2024 no repositório do github (https://github.com/Compass-pb-aws-2024-MAIO-A/sprints-2-3-pb-aws-maio).
-
-
+# Autores
+<a src ="https://github.com/NairaMiriam02">Naira Miriam Mineiro de Souza
+</a> |
+<a src ="https://github.com/RaVeNsszz">Rayane da Silva Rodrigues</a> |
+<a src ="https://github.com/YtalloAlves">Ytallo Peireira Alves</a> |
+<a src ="https://github.com/Ygor-Matos">Ygor Silva Matos<a>
