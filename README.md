@@ -33,8 +33,8 @@ Siga o passo-a-passo:
 5. acesse o link <a>localhost:3000/</a> e divirta-se!
 
 # Autores
-<a src ="https://github.com/NairaMiriam02">Naira Miriam Mineiro de Souza
+<a href ="https://github.com/NairaMiriam02">Naira Miriam Mineiro de Souza
 </a> |
-<a src ="https://github.com/RaVeNsszz">Rayane da Silva Rodrigues</a> |
-<a src ="https://github.com/YtalloAlves">Ytallo Peireira Alves</a> |
-<a src ="https://github.com/Ygor-Matos">Ygor Silva Matos<a>
+<a href ="https://github.com/RaVeNsszz">Rayane da Silva Rodrigues</a> |
+<a href ="https://github.com/YtalloAlves">Ytallo Peireira Alves</a> |
+<a href ="https://github.com/Ygor-Matos">Ygor Silva Matos<a>
