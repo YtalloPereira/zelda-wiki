@@ -6,7 +6,12 @@ const { getGameByName } = require('./getGameByName');
 
 router.get('/', getGames);
 
-router.get('/games/:id', getGameById) ;
+router.get('/games/:id',async(req,res)=>{
+    const gameId = req.params.id;
+    const game = await getGameById(gameId);
+
+    console.log(game);
+});
 
 router.get('/game?:name', getGameByName);
 
