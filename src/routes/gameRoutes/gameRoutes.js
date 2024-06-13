@@ -13,6 +13,10 @@ router.get('/games/:id',async(req,res)=>{
     console.log(game);
 });
 
-router.get('/game?:name', getGameByName);
+router.get('/games/search/:name', async(req,res)=>{
+    const gameName = req.params.name;
+    const game = await getGameByName(gameName);
+    console.log(game);
+});
 
 module.exports = router;
