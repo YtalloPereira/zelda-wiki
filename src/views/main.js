@@ -1,4 +1,4 @@
-const numberOfCards = 20;
+const numberOfCards = 32;
 
 async function fetchGameNames() {
     try {
