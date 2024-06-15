@@ -4,18 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <script src="main.js" type="module" defer></script>
   <title>Zelda Wiki</title>
 </head>
+
 <body>
+
+  <header>
+    <img src="assets/logo_zelda_01.png" alt="Logo do Zelda" width="319px">
+  </header>
+  <section>
+    <h2>Bem vindo(a) a <span>Wiki de The Legend of Zelda</span>, escolha um dos jogos e comece a utilizar a nossa plataforma para se aprofundar nesses jogos incríveis!</h2>
+  </section>
+
+
   <main>
-    <header>
-      <img src="/src/views/assets/logo_zelda_01.png" alt="Logo do Zelda" width="319px">
-    </header>
-    <section>
-      <h2>Bem vindo(a) a Wiki de <span>The Legend of Zelda</span>, escolha um dos jogos e comece a utilizar a nossa plataforma para se aprofundar nesses jogos incríveis!</h2>
-    </section>
+    
+    <div id="cardContainer"></div>
+
+    <!--Modal-->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" id="closeModal">&times;</span>
+        <h2 id="modal-title">Modal Title</h2>
+        <p id="modal-content">Janela Modal</p>
+      </div>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
   </main>
+
 </body>
-<script src="../app.js"></script>
+
+<script type="module" src="../src/app.js"></script>
+
 </html>
