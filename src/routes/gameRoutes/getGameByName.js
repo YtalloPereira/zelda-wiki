@@ -1,16 +1,15 @@
-const { api } = require('../api') 
-// o nome tem que estar na exata formatação da API, "Ocarina" tem retorno.
-//"ocarina" não tem.
-const getGameByName = async (gameName) => {
-  try{
+import api from '../api.js';
+
+const getGameByName = async (req, res) => {
+  const { gameName } = req.params; // Captura o gameName dos parâmetros da requisição
+  try {
     const response = await api.get(`/games?name=${gameName}`);
     const data = response.data.data;
-    //const data = { name, description, developer, publisher, released_date };
-    //aqui colocar um loop de for each rodando e exibindo cada um dos atributos 
-    return data;
-  } catch (error){
-    //console.error(error);
-    throw error;
+    res.status(200).json(data);
+  } catch (error) {
+    console.error('Erro ao obter o jogo por nome:', error);
+    res.status(500).json({ error: 'Erro ao obter o jogo por nome' });
   }
 };
-module.exports = { getGameByName }
+
+export default getGameByName;

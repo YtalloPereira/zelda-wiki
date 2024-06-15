@@ -1,60 +1,32 @@
-const express = require('express');
-const exphbs     = require('express-handlebars');
-const path = require('path');
+// app.js
+
+import express from 'express';
+import { engine } from 'express-handlebars';
+import { join } from 'path';
+import cors from 'cors';
+import apiRouter from './routes/api.js';
+import gameRouter from './routes/gameRoutes/gameRoutes.js';
+
 const app = express();
 const port = 3000;
-const {api} = require('./routes/api');
-const gameRoutes = require('./routes/gameRoutes/gameRoutes');
+
+// Middleware para permitir CORS (apenas para desenvolvimento local)
+app.use(cors());
+
+// Configuração para servir arquivos estáticos
+app.use(express.static(join(process.cwd(), 'public')));
+
+// Roteamento da API
+app.use('/api', apiRouter);
+
+// Roteamento das rotas de jogos
+app.use('/games', gameRouter);
+
+// Configuração do handlebars
+app.set('views', join(process.cwd(), 'views')); // Usar process.cwd() para obter o caminho absoluto
+app.engine('handlebars', engine({ defaultLayout: 'main' }));
+app.set('view engine', 'handlebars');
 
 app.listen(port, () => {
     console.log(`Express rodando na porta ${port}`);
-})
-
-app.use('/', gameRoutes);
-
-//handle bars 
-app.set('views',path.join(__dirname,'views'));
-app.engine('handlebars', exphbs.engine({defaultLayout: 'main'}));
-app.set('view engine','handlebars');
-
-/*
-app.get('/', (_req, res) => {
-    res.sendFile(path.join(__dirname,'views', 'index.html'));
-})
-*/
-/*
-const getItemByName = async (itemName) => {
-    const response = await api.get(`/items/?name=${itemName}`)
-    .then(response => {
-        console.log(response.data)
-        return response.data
-    })
-    .catch(error => {
-        console.error(error)
-    })
-}
-
-
-getItemByName('Sword')
-
-
-const gameId = document.getElementById('gameId')
-const btngo = document.getElementById('btn-go')
-const content = document.getElementById('content')
-
-const fetchApi = (value) => {
-    const result = fetch(`https://zelda.fanapis.com/api/games/${value}`)
-    .then((res) => res.json())
-    .then((data) => {
-        console.log(data)
-        return data
-    })
-    return result
-}
-
-btngo.addEventListener('click', async (event) => {
-    event.preventDefault();
-    const result = await fetchApi(gameId.value);
-    content.textContent = `${JSON.stringify(result.data.description, undefined, 2)}`
 });
-*/

@@ -1,7 +1,7 @@
-const axios = require("axios")
+import axios from 'axios';
 
 const api = axios.create({
   baseURL:'https://zelda.fanapis.com/api'
-})
+});
 
-module.exports = { api }
+export default api;

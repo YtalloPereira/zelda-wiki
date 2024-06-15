@@ -1,10 +1,13 @@
-const express = require('express'); 
-const router  = express.Router(); 
-const { getGames } = require('./getGames');
-const { getGameById } = require('./getGameById');
-const { getGameByName } = require('./getGameByName');
+import { Router } from 'express'; 
+const router  = Router(); 
+import  getGames  from './getGames.js';
+import  getGameById from './getGameById.js';
+import  getGameByName from './getGameByName.js';
+import getGameNames from './getGameNames.js';
 
 router.get('/', getGames);
+
+router.get('/names', getGameNames)
 
 router.get('/games/:id',async(req,res)=>{
     const gameId = req.params.id;
@@ -19,4 +22,4 @@ router.get('/games/search/:name', async(req,res)=>{
     console.log(game);
 });
 
-module.exports = router;
+export default router;

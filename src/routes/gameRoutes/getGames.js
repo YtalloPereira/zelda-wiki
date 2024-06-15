@@ -1,15 +1,15 @@
-const { api } = require('../api')
+import { Router } from 'express';
+import api from '../api.js';
 
-const getGames = async () => {
-  const response = await api.get(`/games?limit=32`)
-  .then(response => {
-    const games=response.data.data;
-    console.log(games);
-    return games;
-  })
-  .catch(error => {
-      console.error(error)
-  })
-}
+const getGames = async (req, res) => {
+  try {
+    const response = await api.get('/games?limit=32');
+    const games = response.data.data;
+    res.status(200).json(games);
+  } catch (error) {
+    console.error('Erro ao obter os jogos:', error);
+    res.status(500).json({ error: 'Erro ao obter os jogos' });
+  }
+};
 
-module.exports = { getGames }
+export default getGames;
