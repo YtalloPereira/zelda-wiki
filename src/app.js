@@ -1,7 +1,6 @@
 // app.js
 
 import express from 'express';
-import { engine } from 'express-handlebars';
 import { join } from 'path';
 import cors from 'cors';
 import apiRouter from './routes/api.js';
@@ -21,11 +20,6 @@ app.use('/api', apiRouter);
 
 // Roteamento das rotas de jogos
 app.use('/games', gameRouter);
-
-// Configuração do handlebars
-app.set('views', join(process.cwd(), 'views')); // Usar process.cwd() para obter o caminho absoluto
-app.engine('handlebars', engine({ defaultLayout: 'main' }));
-app.set('view engine', 'handlebars');
 
 app.listen(port, () => {
     console.log(`Express rodando na porta ${port}`);
