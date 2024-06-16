@@ -71,6 +71,8 @@ async function openModal(cardNumber) {
     document.getElementById('modal-developer').textContent = modal.developer;
     document.getElementById('modal-publisher').textContent =  modal.publisher;
     document.getElementById('modal-release-date').textContent = modal.released_date;
+    
+    document.getElementById('modal-img').src = `./assets/${cardNumber}.png`;
 
     document.getElementById('modal').style.display = 'block';
     document.getElementById('overlay').style.display = 'block';
