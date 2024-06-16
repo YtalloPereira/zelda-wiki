@@ -21,6 +21,10 @@ app.use('/api', apiRouter);
 // Roteamento das rotas de jogos
 app.use('/games', gameRouter);
 
+app.get('/', (_req, res) => {
+    res.sendFile(path.join(__dirname,'views', 'index.html'));
+})
+
 app.listen(port, () => {
     console.log(`Express rodando na porta ${port}`);
 });
