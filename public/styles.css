@@ -15,7 +15,10 @@ body {
     padding: 0;
     background-image: linear-gradient(to bottom, #ace949, #2f8553, #3c6161);
 }
-
+#subtitle{
+    color: #97948e;
+    filter: 1px #0000;
+}
 body::before {
     content: '';
     position: absolute;
