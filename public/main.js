@@ -12,7 +12,7 @@ async function fetchGameNames() {
         // Mapear os nomes dos jogos para incluir o caminho das imagens
         const gamesWithImages = games.map((game, index) => ({
             name: game,
-            image: `/src/views/assets/${index + 1}.png` // Exemplo: assets/1.jpg, assets/2.jpg, etc.
+            image: `./assets/${index + 1}.png` // Exemplo: assets/1.jpg, assets/2.jpg, etc.
         }));
 
         return gamesWithImages; // Retorna os nomes dos jogos com imagens
