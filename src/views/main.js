@@ -62,12 +62,35 @@ async function createCards() {
 
 // Função para abrir o modal (mantida como antes)
 async function openModal(cardNumber) {
-    const gameName = document.querySelector(`[data-card="${cardNumber}"] h3`).textContent;
-    document.getElementById('modal-title').textContent = gameName;
-    document.getElementById('modal-content').textContent = `Detalhes sobre o jogo ${gameName}`;
+
+    const modal = await createModal(cardNumber); 
+    console.log(modal);
+
+    document.getElementById('modal-title').textContent = modal.name;
+    document.getElementById('modal-content').textContent = modal.description;
+    document.getElementById('modal-developer').textContent = modal.developer;
+    document.getElementById('modal-publisher').textContent =  modal.publisher;
+    document.getElementById('modal-release-date').textContent = modal.released_date;
+
     document.getElementById('modal').style.display = 'block';
     document.getElementById('overlay').style.display = 'block';
     document.body.style.overflow = 'hidden';
+    
+}
+async function createModal(cardNumber){
+    try {
+        const response = await fetch('http://localhost:3000/games');
+        
+        if (!response.ok) {
+            throw new Error('Não foi possível obter os nomes dos jogos');
+        }
+        const games = await response.json(); // Converte a resposta para JSON
+        
+        return games[cardNumber-1];
+    } catch (error) {
+        console.error('Erro ao obter os nomes dos jogos:', error);
+        return []; // Retorna um array vazio em caso de erro
+    }
 }
 
 // Função para fechar o modal (mantida como antes)

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="modal.css">
   <script src="main.js" type="module" defer></script>
   <title>Zelda Wiki</title>
 </head>
@@ -27,7 +28,15 @@
       <div class="modal-content">
         <span class="close-button" id="closeModal">&times;</span>
         <h2 id="modal-title">Modal Title</h2>
-        <p id="modal-content">Janela Modal</p>
+        <div id="modal-info">
+          <img src="./assets/1.png" alt="">
+          <div id="modal-info-data">         
+            <p>Developer: <span id="modal-developer"></span></p>
+            <p>Publisher: <span id="modal-publisher"></span></p>
+            <p>Release at: <span id="modal-release-date"></span></p>
+          </div>
+        </div>
+        <p id="modal-content">Descrição</p>
       </div>
     </div>
 
