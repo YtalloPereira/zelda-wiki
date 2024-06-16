@@ -58,6 +58,16 @@ main{
     margin: 0 50px 0 50px;
 }
 
+#search-bar {
+    margin: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.9));
+}
+
+#search-bar input {
+    padding: 5px;
+}
 
 #cardContainer {
     display: grid;

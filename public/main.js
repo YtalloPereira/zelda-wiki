@@ -37,6 +37,7 @@ async function createCards() {
             card.className = "card";
             card.style.backgroundImage = `url(${image})`; // Define a imagem como plano de fundo
             card.setAttribute("data-card", index + 1); // Adiciona 1 para começar de 1
+            card.setAttribute("data-name", name.toLowerCase()); //Adiciona o nome, "data-name" será utilizado para filtrar na barra de busca
 
             // Adicionar título do jogo ao card
             const cardTitle = document.createElement("h3");
@@ -57,6 +58,19 @@ async function createCards() {
     } catch (error) {
         console.error('Erro ao criar os cards:', error);
     }
+} createCards(); //Chamada para criar os cards
+
+function searchCards(){
+    const input = document.getElementById("search-by-name").value;
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+        if(card.dataset.name.includes(input)){
+            card.style.display = "flex";
+        } else {
+            card.style.display = "none";
+        }
+    });
 }
 
 
@@ -111,5 +125,6 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
-// Chamada para criar os cards ao carregar a página
-createCards();
+// Event listener da barra de busca
+document.getElementById('search-by-name').addEventListener('input', searchCards);
+
