@@ -23,7 +23,7 @@ Dentro da mesma, o usuário encontrará uma rica fonte de informações sobre ca
 - `Procurar um jogo`: através de um campo de pesquisa e Utilizando uma palavra chave, o usuário poderá procurar por um jogo específico.
 
 # 📁 Acesso ao projeto
-<a href ="zelda-wiki-compass.us-east-1.elasticbeanstalk.com">Zelda-Wiki</a> 
+<a href ="https://zelda-wiki-compass.us-east-1.elasticbeanstalk.com">Zelda-Wiki</a> 
 # 🛠️ Abrir e rodar o projeto
 ### :alert: você precisa fazer parte da organização Compass-pb-aws-2024-MAIO-A :alert:
 Siga o passo-a-passo:
