@@ -7,7 +7,7 @@ import apiRouter from './routes/api.js';
 import gameRouter from './routes/gameRoutes/gameRoutes.js';
 
 const app = express();
-const port = 3000;
+const port = 80;
 
 // Middleware para permitir CORS (apenas para desenvolvimento local)
 app.use(cors());
