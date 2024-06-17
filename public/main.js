@@ -2,7 +2,7 @@ const numberOfCards = 32;
 
 async function fetchGameNames() {
     try {
-        const response = await fetch('http://localhost:3000/games/names');
+        const response = await fetch('http://zelda-wiki-compass.us-east-1.elasticbeanstalk.com/games/names');
         
         if (!response.ok) {
             throw new Error('Não foi possível obter os nomes dos jogos');
@@ -95,7 +95,7 @@ async function openModal(cardNumber) {
 }
 async function createModal(cardNumber){
     try {
-        const response = await fetch('http://localhost:3000/games');
+        const response = await fetch('http://zelda-wiki-compass.us-east-1.elasticbeanstalk.com/games');
         
         if (!response.ok) {
             throw new Error('Não foi possível obter os nomes dos jogos');
