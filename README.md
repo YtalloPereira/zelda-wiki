@@ -25,7 +25,7 @@ Dentro da mesma, o usuário encontrará uma rica fonte de informações sobre ca
 # 📁 Acesso ao projeto
 Acesse o [Zelda Wiki Compass](http://zelda-wiki-compass.us-east-1.elasticbeanstalk.com) para mais informações sobre o universo do Zelda.
 # 🛠️ Abrir e rodar o projeto
-### :alert: você precisa fazer parte da organização Compass-pb-aws-2024-MAIO-A :alert:
+### você precisa fazer parte da organização Compass-pb-aws-2024-MAIO-A 
 Siga o passo-a-passo:
 1. abra o GitBash e utilize o comando "git clone  https://github.com/Compass-pb-aws-2024-MAIO-A/sprints-2-3-pb-aws-maio" para clonar o projeto.
 2. utilize o comando "git switch branch-8" e terá acesso a branch que contém o código fonte do projeto.
