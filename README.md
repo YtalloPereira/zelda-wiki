@@ -1,4 +1,4 @@
-<h1 align="center"> Zelda: a Link to the Compass </h1>
+<h1 align="center"> Zelda Wiki </h1>
 <p align="center">
 <img src="/public/assets/Zelda_Logo.png">
 </p>
@@ -22,16 +22,12 @@ Dentro da mesma, o usuário encontrará uma rica fonte de informações sobre ca
 - `Visualizar um jogo específico`: ao selecionar um jogo específico, o usuário terá acesso as informações detalhadas do mesmo.
 - `Procurar um jogo`: através de um campo de pesquisa e Utilizando uma palavra chave, o usuário poderá procurar por um jogo específico.
 
-# 📁 Acesso ao projeto
-Acesse o [Zelda Wiki Compass](http://zelda-wiki-compass.us-east-1.elasticbeanstalk.com) para mais informações sobre o universo do Zelda.
 # 🛠️ Abrir e rodar o projeto
-### você precisa fazer parte da organização Compass-pb-aws-2024-MAIO-A 
 Siga o passo-a-passo:
-1. abra o GitBash e utilize o comando "git clone  https://github.com/Compass-pb-aws-2024-MAIO-A/sprints-2-3-pb-aws-maio" para clonar o projeto.
-2. utilize o comando "git switch branch-8" e terá acesso a branch que contém o código fonte do projeto.
-3. dentro da pasta do projeto, utilize o comando "npm install" e assim o gerenciador de pacotes baixará todas as dependências necessárias para o funcionamento do projeto.
-4. ainda no terminal, digite "npm run dev" para que o projeto seja inicializado
-5. acesse o link <a>localhost:3000/</a> e divirta-se!
+1. abra o GitBash e utilize o comando "git clone  https://github.com/YtalloPereira/zelda-wiki" para clonar o projeto.
+2. dentro da pasta do projeto, utilize o comando "npm install" e assim o gerenciador de pacotes baixará todas as dependências necessárias para o funcionamento do projeto.
+3. ainda no terminal, digite "npm run dev" para que o projeto seja inicializado
+4. acesse o link <a>localhost:3000/</a> e divirta-se!
 
 # Autores
 <a href ="https://github.com/NairaMiriam02">Naira Miriam Mineiro de Souza
